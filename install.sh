@@ -1,5 +1,6 @@
 git submodule init && git submodule update
-#virtualenv ~/.neovimpython
+rm -rf ~/.neovimpython && virtualenv ~/.neovimpython
+source ~/.neovimpython/bin/activate && pip install neovim
 rm ~/.config; ln -sf ~/.dotfiles/.config ~/.config
 rm ~/.bashrc; ln -sf ~/.dotfiles/.bashrc ~/.bashrc
 rm ~/.vimrc; ln -sf ~/.dotfiles/.vimrc ~/.vimrc
